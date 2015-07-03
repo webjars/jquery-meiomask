@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-meiomask</artifactId>
-    <version>1.1.14-SNAPSHOT</version>
+    <version>1.1.14</version>
     <name>jQuery MeioMask</name>
     <description>WebJar for jQuery MeioMask</description>
     <url>http://webjars.org</url>
@@ -53,7 +53,7 @@
         <url>http://github.com/webjars/jquery-meiomask</url>
         <connection>scm:git:https://github.com/webjars/jquery-meiomask.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery-meiomask.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jquery-meiomask-1.1.14</tag>
     </scm>
     
     <dependencies>
@@ -76,13 +76,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/dist"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}/dist" />
                                 </move>
                             </target>
                         </configuration>
