@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-meiomask</artifactId>
-    <version>1.1.14</version>
+    <version>1.1.15-SNAPSHOT</version>
     <name>jQuery MeioMask</name>
     <description>WebJar for jQuery MeioMask</description>
     <url>http://webjars.org</url>
@@ -53,7 +53,7 @@
         <url>http://github.com/webjars/jquery-meiomask</url>
         <connection>scm:git:https://github.com/webjars/jquery-meiomask.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery-meiomask.git</developerConnection>
-        <tag>jquery-meiomask-1.1.14</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <dependencies>
